@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "username": "alice",
+    "password": "securepassword1"
+  },
+  {
+    "id": 1,
+    "username": "bob",
+    "password": "password1234"
+  },
+  {
+    "id": 2,
+    "username": "charlie",
+    "password": "abc123"
+  },
+  {
+    "id": 3,
+    "username": "diana",
+    "password": "dianapw"
+  },
+  {
+    "id": 4,
+    "username": "eve",
+    "password": "evilpassword"
+  },
+  {
+    "id": 5,
+    "username": "frank",
+    "password": "frankie987"
+  },
+  {
+    "id": 6,
+    "username": "grace",
+    "password": "graceful@2023"
+  },
+  {
+    "id": 7,
+    "username": "henry",
+    "password": "henrypass"
+  },
+  {
+    "id": 8,
+    "username": "isabel",
+    "password": "isabel_secure"
+  },
+  {
+    "id": 9,
+    "username": "jack",
+    "password": "jackspassword"
+  }
+]
