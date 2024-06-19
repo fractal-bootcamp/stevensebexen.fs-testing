@@ -35,8 +35,8 @@ model UserGameFavorites {
   gameId Int
   userId Int
 
-  game Game @relation(fields: [gameId], references: [id])
-  user User @relation(fields: [userId], references: [id])
+  game Game @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([gameId, userId])
 }

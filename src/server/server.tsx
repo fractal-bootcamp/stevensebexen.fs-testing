@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import prisma from './prismaClient';
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 
 const app = express();
 
@@ -50,12 +51,20 @@ const addFavorite = async (req: Request, res: Response) => {
     return;
   }
 
-  await prisma.userGameFavorites.create({
-    data: {
-      gameId,
-      userId
+  try {
+    await prisma.userGameFavorites.create({
+      data: {
+        gameId,
+        userId
+      }
+    });
+  } catch (e) {
+    if (e instanceof PrismaClientKnownRequestError) {
+      console.log(`Attempt to create favorite with user(${userId}) and game(${gameId}) failed. Nonexistent id.`);
+      res.status(404).json({ message: `Attempt to add game ${gameId} to user ${userId}'s favorites failed. One or both IDs are invalid.`});
+      return;
     }
-  });
+  }
 
   console.log(`Created new favorite: game(${gameId}) user(${userId}).`);
   res.json({ message: 'Success!' });
