@@ -10,7 +10,6 @@ const getAllGames = async (_: Request, res: Response) => {
   console.log('Handled request on /games.');
   res.json(games);
 };
-
 // Gets details for a specific game.
 const getSpecificGame = async (req: Request, res: Response) => {
   const _gameId = req.params.id;
@@ -35,7 +34,7 @@ const getSpecificGame = async (req: Request, res: Response) => {
     res.json(game);
   }
 };
-
+// Creates a new UserGameFavorite entry from the gameId in the URL and userId in the body.
 const addFavorite = async (req: Request, res: Response) => {
   const _gameId = req.params.id;
   if (!_gameId) {
@@ -71,3 +70,5 @@ app.get('/games', getAllGames);
 app.post('/games/:id/addFavorite', addFavorite);
 
 app.listen(PORT, () => { console.log(`Server listening on port ${PORT}. `) });
+
+export default app;
