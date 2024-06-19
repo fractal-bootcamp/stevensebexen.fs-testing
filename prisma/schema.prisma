@@ -14,7 +14,7 @@ datasource db {
 }
 
 model Game {
-  id String @id @default(uuid())
+  id Int @id @default(autoincrement())
   title String
   description String
   releaseDate DateTime
@@ -24,7 +24,7 @@ model Game {
 }
 
 model User {
-  id String @id @default(uuid())
+  id Int @id @default(autoincrement())
   username String
   password String
 
@@ -32,8 +32,8 @@ model User {
 }
 
 model UserGameFavorites {
-  gameId String
-  userId String
+  gameId Int
+  userId Int
 
   game Game @relation(fields: [gameId], references: [id])
   user User @relation(fields: [userId], references: [id])

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Legend of Aloria",
+    "description": "Embark on an epic quest to save the kingdom from dark forces.",
+    "releaseDate": "2023-05-15T00:00:00Z",
+    "genre": "RPG"
+  },
+  {
+    "title": "Galactic Conquest",
+    "description": "Lead your fleet to dominate the galaxy in this space strategy game.",
+    "releaseDate": "2024-02-28T00:00:00Z",
+    "genre": "Strategy"
+  },
+  {
+    "title": "Cybernetic Revolution",
+    "description": "Explore a cyberpunk world and unravel the mysteries of advanced AI.",
+    "releaseDate": "2023-09-10T00:00:00Z",
+    "genre": "Action"
+  },
+  {
+    "title": "Fantasy Realms",
+    "description": "Build your kingdom, forge alliances, and conquer enemies in a mythical land.",
+    "releaseDate": "2024-04-22T00:00:00Z",
+    "genre": "Simulation"
+  },
+  {
+    "title": "Apocalypse Now",
+    "description": "Survive in a post-apocalyptic world filled with danger and despair.",
+    "releaseDate": "2023-11-17T00:00:00Z",
+    "genre": "Adventure"
+  },
+  {
+    "title": "Starfall Chronicles",
+    "description": "Navigate political intrigue and cosmic mysteries in a futuristic universe.",
+    "releaseDate": "2024-07-08T00:00:00Z",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Battlefield Zero",
+    "description": "Engage in intense multiplayer battles across war-torn landscapes.",
+    "releaseDate": "2023-08-03T00:00:00Z",
+    "genre": "FPS"
+  },
+  {
+    "title": "Mystic Quest",
+    "description": "Discover hidden treasures and ancient secrets in a magical realm.",
+    "releaseDate": "2024-01-19T00:00:00Z",
+    "genre": "Adventure"
+  },
+  {
+    "title": "Empire Builder",
+    "description": "Construct magnificent cities and lead your civilization to greatness.",
+    "releaseDate": "2023-06-30T00:00:00Z",
+    "genre": "Simulation"
+  },
+  {
+    "title": "Ninja Blade",
+    "description": "Master the art of stealth and combat as a ninja warrior.",
+    "releaseDate": "2024-03-12T00:00:00Z",
+    "genre": "Action"
+  },
+  {
+    "title": "Pirate's Legacy",
+    "description": "Sail the high seas, plunder treasure, and build your pirate empire.",
+    "releaseDate": "2023-10-25T00:00:00Z",
+    "genre": "Adventure"
+  },
+  {
+    "title": "Eternal Quest",
+    "description": "Journey through time and space to uncover the secrets of immortality.",
+    "releaseDate": "2024-06-14T00:00:00Z",
+    "genre": "RPG"
+  },
+  {
+    "title": "Inferno",
+    "description": "Fight demons and navigate hellish landscapes in this dark fantasy adventure.",
+    "releaseDate": "2023-12-08T00:00:00Z",
+    "genre": "Action"
+  },
+  {
+    "title": "Cosmic Architects",
+    "description": "Design and manage your own intergalactic civilization.",
+    "releaseDate": "2024-05-01T00:00:00Z",
+    "genre": "Strategy"
+  },
+  {
+    "title": "Shadow's Edge",
+    "description": "Unravel the conspiracy of a shadowy organization in a noir-inspired world.",
+    "releaseDate": "2023-07-19T00:00:00Z",
+    "genre": "Adventure"
+  },
+  {
+    "title": "Mech Wars",
+    "description": "Pilot giant mechs in epic battles for dominance on a war-torn planet.",
+    "releaseDate": "2024-02-03T00:00:00Z",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Forgotten Realms",
+    "description": "Reclaim lost kingdoms and vanquish ancient evils in a high-fantasy world.",
+    "releaseDate": "2023-09-28T00:00:00Z",
+    "genre": "RPG"
+  },
+  {
+    "title": "Ghost Recon",
+    "description": "Execute covert operations in enemy territory as part of an elite special forces team.",
+    "releaseDate": "2024-04-10T00:00:00Z",
+    "genre": "FPS"
+  },
+  {
+    "title": "Dimensional Rift",
+    "description": "Explore alternate realities and face inter-dimensional threats.",
+    "releaseDate": "2023-11-05T00:00:00Z",
+    "genre": "Action"
+  },
+  {
+    "title": "Aetherborn",
+    "description": "Harness the power of elemental forces in a mystical world.",
+    "releaseDate": "2024-07-27T00:00:00Z",
+    "genre": "Fantasy"
+  }
+]
