@@ -2,7 +2,6 @@ import express, { Request, Response } from 'express';
 import prisma from './prismaClient';
 
 const app = express();
-const PORT = 3000;
 
 // Responds with an array of games.
 const getAllGames = async (_: Request, res: Response) => {
@@ -68,7 +67,5 @@ app.get('/games/:id', getSpecificGame);
 app.get('/games', getAllGames);
 
 app.post('/games/:id/addFavorite', addFavorite);
-
-app.listen(PORT, () => { console.log(`Server listening on port ${PORT}. `) });
 
 export default app;
