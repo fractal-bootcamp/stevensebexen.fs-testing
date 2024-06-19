@@ -11,11 +11,14 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "migrate": "npx prisma migrate dev",
+    "migrate-test": "npx prisma migrate dev --schema ./prisma/schema.test.prisma",
     "test": "npx vitest"
   },
   "dependencies": {
     "@prisma/client": "^5.15.1",
     "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "postcss": "^8.4.38",
     "prisma": "^5.15.1",
@@ -33,6 +36,7 @@
     "@storybook/react": "^8.1.10",
     "@storybook/react-vite": "^8.1.10",
     "@storybook/test": "^8.1.10",
+    "@types/cors": "^2.8.17",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/supertest": "^6.0.2",
