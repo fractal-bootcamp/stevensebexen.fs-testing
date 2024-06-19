@@ -1,0 +1,11 @@
+name: game-db
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: wyverndb
+      POSTGRES_PASSWORD: rawrmeansiloveyou
+    ports:
+      - 10002:5432
