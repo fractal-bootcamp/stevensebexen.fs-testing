@@ -1,36 +1,12 @@
 import sampleGames from './sampleGames.json';
-import sampleUsers from './sampleUsers.json';
-import prisma from './prismaClient';
 import request from 'supertest';
 import app from './server';
-import { beforeAll, afterAll, test, describe, expect } from 'vitest';
-
-const initTestDatabase = async () => {
-  await prisma.$transaction([
-    prisma.game.createMany({
-      data: sampleGames
-    }),
-    prisma.user.createMany({
-      data: sampleUsers
-    })
-  ]);
-};
-
-const clearTestDatabase = async () => {
-  await prisma.$transaction([
-    prisma.game.deleteMany(),
-    prisma.user.deleteMany(),
-    prisma.userGameFavorites.deleteMany()
-  ]);
-}
-
-beforeAll(async () => {
-  await initTestDatabase();
-});
+import { test, describe, expect, afterAll } from 'vitest';
+import prisma from './prismaClient';
 
 afterAll(async () => {
-  await clearTestDatabase();
-});
+  await prisma.userGameFavorites.deleteMany();
+})
 
 test('GET /games', async () => {
   const response = await request(app).get('/games')
